@@ -1,0 +1,34 @@
+{
+  "name": "taskkit-less",
+  "version": "0.0.1",
+  "description": "Compiles .less files",
+  "main": "less.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firstandthird/taskkit-less.git"
+  },
+  "scripts": {
+    "test": "tap test/**.js"
+  },
+  "author": "First+Third",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/firstandthird/taskkit-less/issues"
+  },
+  "homepage": "https://github.com/firstandthird/taskkit-less#readme",
+  "devDependencies": {
+    "eslint": "^3.9.1",
+    "eslint-config-firstandthird": "^3.0.2",
+    "eslint-plugin-import": "^2.1.0",
+    "tap": "^10.3.2"
+  },
+  "dependencies": {
+    "async": "^2.4.0",
+    "glob": "^7.1.1",
+    "less": "^2.7.2",
+    "taskkit-task": "0.0.11"
+  },
+  "eslintConfig": {
+    "extends": "firstandthird"
+  }
+}
