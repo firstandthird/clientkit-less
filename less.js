@@ -5,11 +5,16 @@ const async = require('async');
 const fs = require('fs');
 const glob = require('glob');
 const os = require('os');
-
+const path = require('path');
 class LessTask extends TaskKitTask {
 
   get description() {
     return 'This task uses the less compiler to transform .less files into .css files';
+  }
+
+  // returns the module to load when running in a separate process:
+  get classModule() {
+    return path.join(__dirname, 'less.js');
   }
 
   execute(allDone) {
