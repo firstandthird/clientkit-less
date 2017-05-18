@@ -1,6 +1,6 @@
 {
   "name": "taskkit-less",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Compiles .less files",
   "main": "less.js",
   "repository": {
