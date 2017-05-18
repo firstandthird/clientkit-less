@@ -12,19 +12,13 @@ tap.test('will compile a .less file to .css', (t) => {
     modifyVars: {
       'base-path': '"/ui"'
     },
+    dist: path.join(__dirname, 'less1', 'expectedOutputs'),
     paths: [
       path.join(__dirname, 'less1', 'includes')
     ],
-    files: [
-      {
-        expand: true,
-        cwd: __dirname,
-        src: path.join(__dirname, 'less1', '**/*.less'),
-        ext: '.css',
-        flatten: true,
-        dest
-      }
-    ],
+    files: {
+      'common.dest.css': path.join(__dirname, 'less1', 'some.less')
+    },
   }, {
     runner: {
       run: (taskName) => {
