@@ -25,7 +25,7 @@
   "dependencies": {
     "async": "^2.4.0",
     "less": "^2.7.2",
-    "taskkit-task": "0.0.14"
+    "taskkit-task": "^1.0.0"
   },
   "eslintConfig": {
     "extends": "firstandthird"

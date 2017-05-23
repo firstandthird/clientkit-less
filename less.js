@@ -10,7 +10,10 @@ class LessTask extends TaskKitTask {
   get description() {
     return 'This task uses the less compiler to transform .less files into .css files';
   }
-
+  // returns the module to load when running in a separate process:
+  get classModule() {
+    return path.join(__dirname, 'less.js');
+  }
   process(input, file, allDone) {
     const options = this.options;
     async.autoInject({
